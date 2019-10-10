@@ -1,0 +1,13 @@
+sandbox_init_nvm(){
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
+
+sandbox_hook nvm node
+sandbox_hook nvm nodemon
+sandbox_hook nvm serv
+sandbox_hook nvm npm
+sandbox_hook nvm yarn
+sandbox_hook nvm vim
+sandbox_hook nvm tsc
