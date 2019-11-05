@@ -14,8 +14,6 @@ let g:colors_name = "eshinn"
 "hi CTagsMember -- no settings --
 "hi CTagsGlobalConstant -- no settings --
 "hi Ignore -- no settings --
-" hi Normal guifg=#ab7be3 guibg=#0a0213 guisp=#0a0213 gui=NONE ctermfg=140 ctermbg=17 cterm=NONE
-hi Normal guifg=#ab7be3 guibg=#0A0012 guisp=#0a0213 gui=NONE ctermfg=140 ctermbg=17 cterm=NONE
 "hi CTagsImport -- no settings --
 "hi CTagsGlobalVariable -- no settings --
 "hi EnumerationValue -- no settings --
@@ -26,13 +24,13 @@ hi Normal guifg=#ab7be3 guibg=#0A0012 guisp=#0a0213 gui=NONE ctermfg=140 ctermbg
 "hi LocalVariable -- no settings --
 "hi CTagsClass -- no settings --
 "hi clear -- no settings --
+hi Normal guifg=#ab7be3 guibg=#0A0012 guisp=#0a0213 gui=NONE ctermfg=140 ctermbg=17 cterm=NONE
 hi IncSearch guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=1 cterm=NONE
 hi WildMenu guifg=NONE guibg=#A1A6A8 guisp=#A1A6A8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
 hi SignColumn guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
 hi SpecialComment guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Typedef guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Title guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=bold ctermfg=189 ctermbg=235 cterm=bold
-" hi Folded guifg=#192224 guibg=#A1A6A8 guisp=#A1A6A8 gui=italic ctermfg=235 ctermbg=248 cterm=NONE
 hi Folded guifg=#541389 guibg=#12041D guisp=#A1A6A8 gui=italic ctermfg=235 ctermbg=248 cterm=NONE
 hi PreCondit guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi Include guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
@@ -49,7 +47,7 @@ hi Conditional guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NO
 hi StorageClass guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Todo guifg=#552d82 guibg=#e294e8 guisp=#e294e8 gui=NONE ctermfg=54 ctermbg=176 cterm=NONE
 hi Special guifg=#00f2ff guibg=NONE guisp=NONE gui=NONE ctermfg=14 ctermbg=NONE cterm=NONE
-hi LineNr guifg=#281f33 guibg=NONE guisp=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
+hi LineNr guifg=#41354c guibg=NONE guisp=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#533c6e guibg=#191221 guisp=#191221 gui=bold ctermfg=60 ctermbg=234 cterm=bold
 hi Label guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=1 ctermbg=NONE cterm=bold
 hi PMenuSel guifg=#be9ae6 guibg=#321752 guisp=#321752 gui=NONE ctermfg=140 ctermbg=17 cterm=NONE
