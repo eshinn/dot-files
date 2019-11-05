@@ -14,16 +14,16 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'moll/vim-node'
-" Plug 'ternjs/tern_for_vim'
+Plug 'iloginow/vim-stylus'
 Plug 'pangloss/vim-javascript'
-" Plug 'ryanoasis/vim-webdevicons'
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 Plug 'bling/vim-bufferline'
 Plug 'mattn/emmet-vim'
+Plug 'https://github.com/m-kat/aws-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -31,10 +31,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
-" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+
 Plug 'leafgarland/typescript-vim'
 Plug 'dense-analysis/ale'
-Plug 'iloginow/vim-stylus'
+
 call plug#end()
 
 set clipboard=unnamed
@@ -47,21 +47,16 @@ set clipboard=unnamed
 
 syntax enable
 
-set number
+set relativenumber
 set hlsearch
 set incsearch
 set encoding=utf-8
-" set guifont=Knack\ Nerd\ Font:h12
 
 if has("termguicolors")
   set termguicolors
 endif
 
 colorscheme eshinn
-" colorscheme ghostbuster
-" colorscheme paramount
-" colorscheme one
-" colorscheme dark_purple
 
 set splitbelow
 set splitright
@@ -87,6 +82,7 @@ nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 nmap <Leader>m :NERDTreeToggle<cr>
 nmap <Leader><space> :nohlsearch<cr>
+nmap <Leader>f :buffers<CR>:buffer<Space>
 
 "---------------------------------------"
 "--- Vim-Node --------------------------"
@@ -99,11 +95,11 @@ nmap <Leader><space> :nohlsearch<cr>
 "--- Nerd Commentor --------------------"
 "---------------------------------------"
 
-let g:NERDDefaultAlign = 'left'
-let g:NERDSpaceDelims = 1
-let g:NERDCustomDelimiters = {
-  \ 'stylus': { 'left': '//' }
-\ }
+ let g:NERDDefaultAlign = 'left'
+ let g:NERDSpaceDelims = 1
+ let g:NERDCustomDelimiters = {
+   \ 'stylus': { 'left': '//' }
+ \ }
 
 "---------------------------------------"
 "--- Nerd Tree -------------------------"
@@ -120,9 +116,6 @@ let NERDTreeQuitOnOpen = 1
 let g:deoplete#enable_at_startup = 1
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" call deoplete#custom#option('sources', {
-" \ '_': ['ale', 'foobar'],
-" \})
 
 "---------------------------------------"
 "--- Fuzzy Finder ----------------------"
@@ -140,6 +133,8 @@ command! -bang -nargs=* Ag
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
+" command! -bang -nargs=* AgWord call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
+
 "---------------------------------------"
 "--- Airline----------------------------"
 "---------------------------------------"
@@ -147,3 +142,12 @@ command! -bang -nargs=* Ag
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 
+"---------------------------------------"
+"--- Ale -------------------------------"
+"---------------------------------------"
+
+let g:ale_completion_enabled = 1
+let g:ale_completion_tsserver_autoimport = 1
+let g:ale_sign_highlight_linenrs = 1
+let g:ale_sign_error = '👾'
+let g:airline#extensions#ale#enabled = 1
