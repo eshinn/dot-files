@@ -17,10 +17,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'rhysd/vim-crystal'
 Plug 'moll/vim-node'
+Plug 'cespare/vim-toml'
 Plug 'iloginow/vim-stylus'
 Plug 'pangloss/vim-javascript'
-Plug 'ryanoasis/vim-devicons'
+Plug 'mxw/vim-jsx'
 Plug 'bling/vim-bufferline'
 Plug 'mattn/emmet-vim'
 Plug 'https://github.com/m-kat/aws-vim'
@@ -33,8 +35,12 @@ Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'dense-analysis/ale'
 
+Plug 'digitaltoad/vim-pug'
+
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 set clipboard=unnamed
@@ -50,7 +56,7 @@ syntax enable
 set relativenumber
 set hlsearch
 set incsearch
-set encoding=utf-8
+set encoding=UTF-8
 
 if has("termguicolors")
   set termguicolors
@@ -70,6 +76,12 @@ hi CurshorLineNr guibg=NONE
 hi ColorColumn guibg=#ffffff
 hi foldcolumn guibg=NONE
 hi vertsplit guifg=bg guibg=NONE
+
+"---------------------------------------"
+"--- Tabs ------------------------------"
+"---------------------------------------"
+
+set tabstop=2 softtabstop=2 expandtab
 
 "---------------------------------------"
 "--- Controls --------------------------"
@@ -121,6 +133,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 "--- Fuzzy Finder ----------------------"
 "---------------------------------------"
 
+" nmap <C-P> :GFiles<cr>
 nmap <C-P> :FZF<cr>
 
 "---------------------------------------"
@@ -136,7 +149,17 @@ command! -bang -nargs=* Ag
 " command! -bang -nargs=* AgWord call fzf#vim#ag(<q-args>, '--word-regexp', <bang>0)
 
 "---------------------------------------"
-"--- Airline----------------------------"
+"--- Filetypes -------------------------"
+"---------------------------------------"
+
+augroup filetypedetect
+  au BufRead,BufNewFile .eslintrc setfiletype yaml
+  au BufRead,BufNewFile .prettierrc setfiletype yaml
+  " associate config types of yaml
+augroup END
+
+"---------------------------------------"
+"--- Airline ---------------------------"
 "---------------------------------------"
 
 let g:airline_powerline_fonts = 1
@@ -151,3 +174,5 @@ let g:ale_completion_tsserver_autoimport = 1
 let g:ale_sign_highlight_linenrs = 1
 let g:ale_sign_error = '👾'
 let g:airline#extensions#ale#enabled = 1
+
+let b:ale_fixers = { '*': ['eslint'] }
