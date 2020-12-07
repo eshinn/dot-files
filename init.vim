@@ -19,12 +19,20 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
+
+
 " -------------------------------------------
 " -- Visuals --------------------------------
 " -------------------------------------------
 
 syntax enable
 set relativenumber
+
+if has("termguicolors")
+  set termguicolors
+endif
+
+
 
 " -------------------------------------------
 " -- Controls -------------------------------
@@ -33,27 +41,39 @@ set relativenumber
 set splitbelow
 set splitright
 
+" -- Window Navigation ----------------------
+nn <C-h> <C-w><C-h>
+nn <C-j> <C-w><C-j>
+nn <C-k> <C-w><C-k>
+nn <C-l> <C-w><C-l>
+
 let mapleader = ','
-nmap <C-H> <C-W><C-H>
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-L> <C-W><C-L>
-nmap <Leader><space> :nohlsearch<cr>
-nmap <Leader>f :buffers<cr>:buffer<space>
+nn <Leader><space> :nohlsearch<cr>
+nn <Leader>f :buffers<cr>:buffer<space>
+
+
 
 " -------------------------------------------
+" -- Dev Helpers ----------------------------
+" -------------------------------------------
+
+nn <Leader>wi :let @+=synIDattr(synID(line("."), col("."), 1), "name")<cr>:echo synIDattr(synID(line("."), col("."), 1), "name")<cr>
+
+
+
+" -------------------------------------------
+" -- Plugin Settings ------------------------
+" -------------------------------------------
+
 " -- Coc ------------------------------------
-" -------------------------------------------
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nn <silent> gd <Plug>(coc-definition)
+nn <silent> gy <Plug>(coc-type-definition)
+nn <silent> gi <Plug>(coc-implementation)
+nn <silent> gr <Plug>(coc-references)
 
-" -------------------------------------------
 " -- Nerd Commentor -------------------------
-" -------------------------------------------
-" let g:NERDDefaultAlign = 'left'
-" let g:NERDSpaceDelims = 1
-" let g:NERDCustomDelimiters = {
-"  \   'stylus': { 'left': '//' }
-"  \ }
+let g:NERDDefaultAlign = 'left'
+let g:NERDSpaceDelims = 1
+let g:NERDCustomDelimiters = {
+ \   'stylus': { 'left': '//' }
+ \ }
