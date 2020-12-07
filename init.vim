@@ -14,6 +14,8 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
@@ -40,6 +42,11 @@ endif
 
 set splitbelow
 set splitright
+set foldmethod=syntax
+
+let mapleader = ','
+nn <Leader><space> :nohlsearch<cr>
+nn <Leader>f :buffers<cr>:buffer<space>
 
 " -- Window Navigation ----------------------
 nn <C-h> <C-w><C-h>
@@ -47,9 +54,8 @@ nn <C-j> <C-w><C-j>
 nn <C-k> <C-w><C-k>
 nn <C-l> <C-w><C-l>
 
-let mapleader = ','
-nn <Leader><space> :nohlsearch<cr>
-nn <Leader>f :buffers<cr>:buffer<space>
+" -- FZF ------------------------------------
+nm <C-p> :FZF<cr>
 
 
 
@@ -57,7 +63,7 @@ nn <Leader>f :buffers<cr>:buffer<space>
 " -- Dev Helpers ----------------------------
 " -------------------------------------------
 
-nn <Leader>wi :let @+=synIDattr(synID(line("."), col("."), 1), "name")<cr>:echo synIDattr(synID(line("."), col("."), 1), "name")<cr>
+nm <Leader>wi :let @+=synIDattr(synID(line("."), col("."), 1), "name")<cr>:echo synIDattr(synID(line("."), col("."), 1), "name")<cr>
 
 
 
@@ -66,10 +72,10 @@ nn <Leader>wi :let @+=synIDattr(synID(line("."), col("."), 1), "name")<cr>:echo 
 " -------------------------------------------
 
 " -- Coc ------------------------------------
-nn <silent> gd <Plug>(coc-definition)
-nn <silent> gy <Plug>(coc-type-definition)
-nn <silent> gi <Plug>(coc-implementation)
-nn <silent> gr <Plug>(coc-references)
+nm <silent> gd <Plug>(coc-definition)
+nm <silent> gy <Plug>(coc-type-definition)
+nm <silent> gi <Plug>(coc-implementation)
+nm <silent> gr <Plug>(coc-references)
 
 " -- Nerd Commentor -------------------------
 let g:NERDDefaultAlign = 'left'
