@@ -22,6 +22,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
 
 " ColorDev
 Plug 'cocopon/inspecthi.vim'
@@ -89,6 +90,10 @@ nm <silent> gd <Plug>(coc-definition)
 nm <silent> gy <Plug>(coc-type-definition)
 nm <silent> gi <Plug>(coc-implementation)
 nm <silent> gr <Plug>(coc-references)
+nm <silent> rn <Plug>(coc-rename)
+nm <silent> rf <Plug>(coc-refactor)
+nm <silent> [g <Plug>(coc-diagnostic-prev)
+nm <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Scavanged from github.com/weirongxu/dotvim/blob/master/plugins-conf/coc.rc.vim
 let g:coc_global_extensions = [
@@ -135,5 +140,7 @@ let g:ale_disable_lsp = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = {
-\ 'stylus': { 'left': '//' }
+\ 'stylus': { 'left': '//' },
+\ 'javascriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' },
+\ 'typescriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \}
