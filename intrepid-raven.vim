@@ -30,3 +30,8 @@ hi StatusLineNC	guibg=#09020f guifg=#594880 gui=NONE
 " hi! link StatusLineNC Pmenu
 " hi! link Statement Normal
 " hi! link StatusLine Normal
+
+hi! link SignColumn LineNr
+hi GitGutterAdd		guifg=#009900
+hi GitGutterChange	guifg=#bbbb00
+hi GitGutterDelete	guifg=#ff2222
