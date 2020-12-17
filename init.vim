@@ -23,6 +23,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
+Plug 'airblade/vim-gitgutter'
 
 " ColorDev
 Plug 'cocopon/inspecthi.vim'
@@ -44,6 +45,8 @@ endif
 colorscheme intrepid-raven
 
 set foldcolumn=1
+
+
 
 " -------------------------------------------
 " -- Controls -------------------------------
@@ -69,6 +72,8 @@ nm <C-p> :FZF<cr>
 
 " -- Coc-Explorer ---------------------------
 nmap <Leader>m :CocCommand explorer<cr>
+
+
 
 " -------------------------------------------
 " -- Dev Helpers ----------------------------
@@ -136,11 +141,18 @@ let g:coc_global_extensions = [
 " -- ALE ------------------------------------
 let g:ale_disable_lsp = 1
 
+" -- Git Gutter -----------------------------
+set foldtext=gitgutter#fold#foldtext()
+nm <silent> ,ggn :GitGutterNextHunk<cr>
+nm <silent> ,ggp :GitGutterPrevHunk<cr>
+
 " -- Nerd Commentor -------------------------
 let g:NERDDefaultAlign = 'left'
 let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = {
+let g:NERDCustomDelimiters = {
 \ 'stylus': { 'left': '//' },
+\ 'stylus': { 'left': '//' }
 \ 'javascriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \ 'typescriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' },
 \}
