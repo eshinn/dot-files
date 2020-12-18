@@ -36,7 +36,6 @@ call plug#end()
 " -------------------------------------------
 
 syntax enable
-set relativenumber
 
 if has("termguicolors")
   set termguicolors
@@ -45,6 +44,12 @@ endif
 colorscheme intrepid-raven
 
 set foldcolumn=1
+
+" -- Set Hybrid Line Numbers ----------------
+set number relativenumber
+" -- ...but not for terminals ---------------
+au TermOpen * setlocal nonumber norelativenumber
+
 
 
 
@@ -66,6 +71,13 @@ nn <C-h> <C-w><C-h>
 nn <C-j> <C-w><C-j>
 nn <C-k> <C-w><C-k>
 nn <C-l> <C-w><C-l>
+
+" -- Terminal Navigation --------------------
+tno <C-h> <C-\><C-n><C-w><C-h>
+tno <C-j> <C-\><C-n><C-w><C-j>
+tno <C-k> <C-\><C-n><C-w><C-k>
+tno <C-l> <C-\><C-n><C-w><C-l>
+au TermOpen * :startinsert
 
 " -- FZF ------------------------------------
 nm <C-p> :FZF<cr>
@@ -91,6 +103,7 @@ nm <Leader>hh :InspecthiHideInspector<cr>
 " -------------------------------------------
 
 " -- Coc ------------------------------------
+set updatetime=300
 nm <silent> gd <Plug>(coc-definition)
 nm <silent> gy <Plug>(coc-type-definition)
 nm <silent> gi <Plug>(coc-implementation)
@@ -150,9 +163,7 @@ nm <silent> ,ggp :GitGutterPrevHunk<cr>
 let g:NERDDefaultAlign = 'left'
 let g:NERDSpaceDelims = 1
 let g:NERDCustomDelimiters = {
-let g:NERDCustomDelimiters = {
 \ 'stylus': { 'left': '//' },
-\ 'stylus': { 'left': '//' }
 \ 'javascriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' },
-\ 'typescriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' },
+\ 'typescriptreact': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' }
 \}
