@@ -4,57 +4,60 @@
       "textSpacing" : 5,
       "subtext" : {
         "size" : 10,
-        "colorSelected" : "#FFFFFFC4",
+        "colorSelected" : "#767676FF",
         "font" : "System",
-        "color" : "#4D4D4DFF"
+        "color" : "#383838FF"
       },
       "shortcut" : {
-        "size" : 13,
-        "colorSelected" : "#444444FF",
+        "size" : 16,
+        "colorSelected" : "#503F86FF",
         "font" : "System",
-        "color" : "#373737FF"
+        "color" : "#FFFFFF29"
       },
-      "backgroundSelected" : "#00000061",
+      "backgroundSelected" : "#00000041",
       "text" : {
         "size" : 16,
-        "colorSelected" : "#C3C3C3FF",
-        "font" : "System",
-        "color" : "#686868FF"
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Helvetica Neue",
+        "color" : "#6D6D6DFF"
       },
-      "iconPaddingHorizontal" : 11,
-      "paddingVertical" : 7,
-      "iconSize" : 34
+      "iconPaddingHorizontal" : 10,
+      "roundness" : 0,
+      "paddingVertical" : 8,
+      "iconSize" : 40
     },
     "search" : {
-      "paddingVertical" : 0,
-      "background" : "#00000000",
-      "spacing" : 8,
+      "backgroundSelected" : "#9B78FF33",
+      "paddingHorizontal" : 8,
+      "spacing" : 4,
       "text" : {
-        "size" : 34,
-        "colorSelected" : "#000000FF",
-        "font" : "System Light",
-        "color" : "#969696FF"
+        "size" : 31,
+        "colorSelected" : "#6952B0FF",
+        "font" : "Helvetica Neue",
+        "color" : "#FFFFFFFF"
       },
-      "backgroundSelected" : "#D8D8DBFF"
+      "background" : "#00000000",
+      "roundness" : 0,
+      "paddingVertical" : 0
     },
     "window" : {
-      "color" : "#0B0B0BD3",
-      "paddingHorizontal" : 9,
+      "color" : "#7360AD00",
+      "paddingHorizontal" : 7,
       "width" : 559,
-      "borderPadding" : 0,
-      "borderColor" : "#0000007F",
-      "blur" : 9,
-      "roundness" : 4,
-      "paddingVertical" : 7
+      "borderPadding" : 2,
+      "borderColor" : "#000000BF",
+      "blur" : 15,
+      "roundness" : 3,
+      "paddingVertical" : 9
     },
     "credit" : "eShinn",
     "separator" : {
-      "color" : "#CBCBCBF3",
+      "color" : "#00000000",
       "thickness" : 0
     },
     "scrollbar" : {
-      "color" : "#561A7200",
-      "thickness" : 2
+      "color" : "#000000FF",
+      "thickness" : 0
     },
     "name" : "eShinn"
   }
