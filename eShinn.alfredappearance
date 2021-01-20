@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 10,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "System",
+        "color" : "#4D4D4DFF"
+      },
+      "shortcut" : {
+        "size" : 13,
+        "colorSelected" : "#444444FF",
+        "font" : "System",
+        "color" : "#373737FF"
+      },
+      "backgroundSelected" : "#00000061",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#C3C3C3FF",
+        "font" : "System",
+        "color" : "#686868FF"
+      },
+      "iconPaddingHorizontal" : 11,
+      "paddingVertical" : 7,
+      "iconSize" : 34
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#00000000",
+      "spacing" : 8,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#000000FF",
+        "font" : "System Light",
+        "color" : "#969696FF"
+      },
+      "backgroundSelected" : "#D8D8DBFF"
+    },
+    "window" : {
+      "color" : "#0B0B0BD3",
+      "paddingHorizontal" : 9,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 9,
+      "roundness" : 4,
+      "paddingVertical" : 7
+    },
+    "credit" : "eShinn",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#561A7200",
+      "thickness" : 2
+    },
+    "name" : "eShinn"
+  }
+}
