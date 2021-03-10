@@ -59,7 +59,6 @@ au TermOpen * setlocal nonumber norelativenumber
 
 set splitbelow
 set splitright
-" set foldmethod=syntax
 set foldmethod=indent
 set clipboard=unnamed
 
@@ -72,14 +71,6 @@ nn <C-h> <C-w><C-h>
 nn <C-j> <C-w><C-j>
 nn <C-k> <C-w><C-k>
 nn <C-l> <C-w><C-l>
-
-" -- Terminal Navigation --------------------
-" ...below conflicts w/ :Ag
-" tno <C-h> <C-\><C-n><C-w><C-h>
-" tno <C-j> <C-\><C-n><C-w><C-j>
-" tno <C-k> <C-\><C-n><C-w><C-k>
-" tno <C-l> <C-\><C-n><C-w><C-l>
-" au TermOpen * :startinsert
 
 " -- FZF ------------------------------------
 nm <C-p> :FZF<cr>
