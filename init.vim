@@ -59,7 +59,8 @@ au TermOpen * setlocal nonumber norelativenumber
 
 set splitbelow
 set splitright
-set foldmethod=syntax
+" set foldmethod=syntax
+set foldmethod=indent
 set clipboard=unnamed
 
 let mapleader = ','
@@ -73,11 +74,12 @@ nn <C-k> <C-w><C-k>
 nn <C-l> <C-w><C-l>
 
 " -- Terminal Navigation --------------------
-tno <C-h> <C-\><C-n><C-w><C-h>
-tno <C-j> <C-\><C-n><C-w><C-j>
-tno <C-k> <C-\><C-n><C-w><C-k>
-tno <C-l> <C-\><C-n><C-w><C-l>
-au TermOpen * :startinsert
+" ...below conflicts w/ :Ag
+" tno <C-h> <C-\><C-n><C-w><C-h>
+" tno <C-j> <C-\><C-n><C-w><C-j>
+" tno <C-k> <C-\><C-n><C-w><C-k>
+" tno <C-l> <C-\><C-n><C-w><C-l>
+" au TermOpen * :startinsert
 
 " -- FZF ------------------------------------
 nm <C-p> :FZF<cr>
