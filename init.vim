@@ -25,6 +25,12 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 
+" Dart/Flutter
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+
 " ColorDev
 Plug 'cocopon/inspecthi.vim'
 call plug#end()
