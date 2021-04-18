@@ -24,6 +24,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'iloginow/vim-stylus'
 
 " Dart/Flutter
 Plug 'dart-lang/dart-vim-plugin'
