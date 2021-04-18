@@ -27,7 +27,6 @@ Plug 'airblade/vim-gitgutter'
 
 " Dart/Flutter
 Plug 'dart-lang/dart-vim-plugin'
-Plug 'thosakwe/vim-flutter'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 
@@ -122,6 +121,7 @@ let g:coc_global_extensions = [
 \ 'coc-html',
 \ 'coc-yaml',
 \ 'coc-svg',
+\ 'coc-flutter',
 \ ]
 " \ 'coc-tslint-plugin',
 " \ 'coc-vimlsp',
