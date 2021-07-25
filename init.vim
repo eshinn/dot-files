@@ -28,6 +28,7 @@ Plug 'iloginow/vim-stylus'
 
 " Dart/Flutter
 Plug 'dart-lang/dart-vim-plugin'
+" Plug 'thosakwe/vim-flutter'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 
