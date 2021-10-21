@@ -73,6 +73,9 @@ let mapleader = ','
 nn <Leader><space> :nohlsearch<cr>
 nn <Leader>f :buffers<cr>:buffer<space>
 
+" -- Add <cr> in normal mode Ctrl-m ---------
+nn <c-m> a<c-m><esc>
+
 " -- Window Navigation ----------------------
 nn <C-h> <C-w><C-h>
 nn <C-j> <C-w><C-j>
@@ -156,7 +159,7 @@ let g:coc_global_extensions = [
 let g:ale_disable_lsp = 1
 
 " -- Git Gutter -----------------------------
-set foldtext=gitgutter#fold#foldtext()
+" set foldtext=gitgutter#fold#foldtext()
 nm <silent> ,ggn :GitGutterNextHunk<cr>
 nm <silent> ,ggp :GitGutterPrevHunk<cr>
 
