@@ -39,7 +39,8 @@ hi Statement	guibg=NONE guifg=#bebba5
 " hi Statement	guibg=NONE guifg=#5b2997
 hi Type	guibg=NONE guifg=#5fb073
 hi Special	guibg=NONE guifg=#cf07d5
-hi Identifier		guibg=NONE guifg=#5d2c99 gui=NONE
+" hi Identifier	guibg=NONE guifg=#5d2c99 gui=NONE
+hi Identifier	guibg=NONE guifg=#7334bd gui=NONE
 hi Constant	guibg=NONE guifg=#d5d207
 hi Comment	guibg=NONE guifg=#3d3548
 
