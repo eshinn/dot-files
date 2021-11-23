@@ -8,7 +8,7 @@ if exists('syntax_on')
 endif
 
 let g:colors_name = 'intrepid-raven'
-
+hi VimError guibg=#510448 guifg=#fb1b1b
 hi TabLine	guibg=NONE guifg=#645873 gui=NONE
 hi TabLineFill 	guibg=NONE guifg=#09020f gui=NONE
 hi TabLineSel	guibg=NONE guifg=#8879d0 gui=NONE
@@ -17,7 +17,8 @@ hi TabLineSel	guibg=NONE guifg=#8879d0 gui=NONE
 " hi BufTabLineHidden	guibg=NONE guifg=NONE
 " hi BufTabLineFill	guibg=NONE guifg=NONE
 
-hi Normal  	guibg=#0e0713 guifg=#8879d0
+" hi Normal  	guibg=#0e0713 guifg=#8879d0
+hi Normal  	guibg=NONE guifg=#8879d0
 " hi Normal  	guibg=#0e0713 guifg=#5b2997
 hi EndOfBuffer	guibg=bg guifg=bg
 
@@ -54,3 +55,21 @@ hi! link SignColumn LineNr
 hi GitGutterAdd		guifg=#009900
 hi GitGutterChange	guifg=#bbbb00
 hi GitGutterDelete	guifg=#ff2222
+
+" hi FloatBoarder guibg=yellow guifg=blue
+" hi type guibg=#510448 guifg=#fb1b1b
+
+hi Search guibg=#353912 guifg=#c2d51d
+hi Visual guibg=#353912 guifg=#c2d51d
+
+" Coc-Highlights
+" hi CocErrorHighLight guibg=NONE
+hi CocFadeOut guibg=#510448 guifg=#fb1b1b
+hi CocErrorSign guibg=#510448 guifg=#fb1b1b
+hi CocErrorHighlight guibg=#510448 guifg=#fb1b1b gui=undercurl
+
+" GitDiff
+hi DiffAdd guibg=#0f150c guifg=#4ed51d
+hi DiffText guibg=#0f150c guifg=#4ed51d
+hi DiffChange guibg=#1b0057 guifg=#a41db7
+hi DiffDelete guibg=#200000 guifg=#951e1e
