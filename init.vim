@@ -14,6 +14,7 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/jsonc.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -107,10 +108,11 @@ nm <silent> ]g <Plug>(coc-diagnostic-next)
 let g:coc_global_extensions = [
 \ 'coc-marketplace',
 \ 'coc-tsserver',
-\ 'coc-eslint',
+\ 'coc-eslint8',
 \ 'coc-json',
 \ 'coc-css',
 \ 'coc-html',
+\ 'coc-vetur',
 \ 'coc-yaml',
 \ 'coc-explorer',
 \ 'coc-svg',
