@@ -25,6 +25,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'iloginow/vim-stylus'
+Plug 'posva/vim-vue'
 
 " ColorDev
 Plug 'cocopon/inspecthi.vim'
@@ -62,6 +63,7 @@ set splitbelow
 set splitright
 set foldmethod=indent
 set clipboard=unnamed
+" set buftype=
 
 let mapleader = ','
 nn <leader><space> :nohlsearch<cr>
@@ -116,10 +118,11 @@ let g:coc_global_extensions = [
 \ 'coc-yaml',
 \ 'coc-explorer',
 \ 'coc-svg',
+\ 'coc-vetur',
 \ ]
 
 " -- FZF ------------------------------------
-nm <silent> <C-p> :Files<cr>
+nn <silent> <C-p> :Files<cr>
 
 " -- Coc-Eslint -----------------------------
 nm <silent> qf <Plug>(coc-eslint)
