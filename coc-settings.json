@@ -1,7 +1,18 @@
 {
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-  "eslint.autoFixOnSave": true,
-  "vetur.ignoreProjectWarning": true
+  // "eslint.autoFixOnSave": true,
+  "vetur.ignoreProjectWarning": true,
+  "yaml.customTags": [
+    "!Equals sequence",
+    "!FindInMap sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!Join sequence",
+    "!Ref",
+    "!Select sequence",
+    "!Split sequence",
+    "!Sub"
+  ]
 }
-
