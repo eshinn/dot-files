@@ -1,18 +1,27 @@
 {
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-  // "eslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": true,
   "vetur.ignoreProjectWarning": true,
   "yaml.customTags": [
+    "!And sequence",
+    "!Base64 scalar",
+    "!Cidr scalar",
+    "!Condition scalar",
     "!Equals sequence",
     "!FindInMap sequence",
-    "!GetAtt",
-    "!GetAZs",
-    "!ImportValue",
+    "!GetAtt scalar",
+    "!GetAZs scalar",
+    "!If sequence",
+    "!ImportValue scalar",
     "!Join sequence",
-    "!Ref",
+    "!Not sequence",
+    "!Or sequence",
+    "!Ref scalar",
     "!Select sequence",
     "!Split sequence",
-    "!Sub"
+    "!Sub scalar",
+    "!Transform mapping"
   ]
 }
+
