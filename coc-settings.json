@@ -2,9 +2,9 @@
   "diagnostic.displayByAle": false,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-  "eslint.autoFixOnSave": true,
   "javascript.suggest.autoImport": true,
   "typescript.suggest.autoImport": true,
+  "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "dart",
