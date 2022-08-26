@@ -27,6 +27,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'iloginow/vim-stylus'
 Plug 'posva/vim-vue'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'mxw/vim-jsx'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " ColorDev
 Plug 'cocopon/inspecthi.vim'
@@ -121,11 +123,16 @@ let g:coc_global_extensions = [
 \ 'coc-explorer',
 \ 'coc-svg',
 \ 'coc-vetur',
+\ 'coc-highlight',
+\ 'coc-styled-components',
 \ ]
 " \ 'coc-java',
 
 " -- FZF ------------------------------------
 nn <silent> <C-p> :Files<cr>
+
+" -- Coc-CR Confirm Completion --------------
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " -- Coc-Eslint -----------------------------
 nm <silent> qf <Plug>(coc-eslint)
