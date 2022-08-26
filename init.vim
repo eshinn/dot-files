@@ -26,6 +26,7 @@ Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'iloginow/vim-stylus'
 Plug 'posva/vim-vue'
+Plug 'mustache/vim-mustache-handlebars'
 
 " ColorDev
 Plug 'cocopon/inspecthi.vim'
@@ -110,7 +111,8 @@ nm <silent> ]g <Plug>(coc-diagnostic-next)
 let g:coc_global_extensions = [
 \ 'coc-marketplace',
 \ 'coc-tsserver',
-\ 'coc-eslint8',
+\ 'coc-eslint',
+\ 'coc-prettier',
 \ 'coc-json',
 \ 'coc-css',
 \ 'coc-html',
@@ -120,6 +122,7 @@ let g:coc_global_extensions = [
 \ 'coc-svg',
 \ 'coc-vetur',
 \ ]
+" \ 'coc-java',
 
 " -- FZF ------------------------------------
 nn <silent> <C-p> :Files<cr>
