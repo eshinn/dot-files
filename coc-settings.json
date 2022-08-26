@@ -1,9 +1,13 @@
 {
+  "diagnostic.displayByAle": false,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
   "eslint.autoFixOnSave": true,
+  "javascript.suggest.autoImport": true,
+  "typescript.suggest.autoImport": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
+    "dart",
     "markdown",
     "typescript",
     "javascript"
@@ -30,4 +34,3 @@
     "!Transform mapping"
   ]
 }
-
