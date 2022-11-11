@@ -2,8 +2,8 @@
   "diagnostic.displayByAle": false,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-  "javascript.suggest.autoImport": true,
-  "typescript.suggest.autoImport": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
   "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
@@ -12,25 +12,26 @@
     "typescript",
     "javascript"
   ],
-  "vetur.ignoreProjectWarning": true,
-  "yaml.customTags": [
-    "!And sequence",
-    "!Base64 scalar",
-    "!Cidr scalar",
-    "!Condition scalar",
-    "!Equals sequence",
-    "!FindInMap sequence",
-    "!GetAtt scalar",
-    "!GetAZs scalar",
-    "!If sequence",
-    "!ImportValue scalar",
-    "!Join sequence",
-    "!Not sequence",
-    "!Or sequence",
-    "!Ref scalar",
-    "!Select sequence",
-    "!Split sequence",
-    "!Sub scalar",
-    "!Transform mapping"
-  ]
+  "vetur.ignoreProjectWarning": true
+  // "yaml.schemaStore.enable": true
+  // "yaml.customTags": [
+  //   "!And sequence",
+  //   "!Base64 scalar",
+  //   "!Cidr scalar",
+  //   "!Condition scalar",
+  //   "!Equals sequence",
+  //   "!FindInMap sequence",
+  //   "!GetAtt scalar",
+  //   "!GetAZs scalar",
+  //   "!If sequence",
+  //   "!ImportValue scalar",
+  //   "!Join sequence",
+  //   "!Not sequence",
+  //   "!Or sequence",
+  //   "!Ref scalar",
+  //   "!Select sequence",
+  //   "!Split sequence",
+  //   "!Sub scalar",
+  //   "!Transform mapping"
+  // ]
 }
