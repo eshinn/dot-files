@@ -20,6 +20,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'tommcdo/vim-fubitive'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
@@ -119,13 +122,14 @@ let g:coc_global_extensions = [
 \ 'coc-css',
 \ 'coc-html',
 \ 'coc-vetur',
-\ 'coc-yaml',
 \ 'coc-explorer',
 \ 'coc-svg',
 \ 'coc-vetur',
 \ 'coc-highlight',
 \ 'coc-styled-components',
+\ 'coc-cfn-lint',
 \ ]
+" \ 'coc-yaml',
 " \ 'coc-java',
 
 " -- FZF ------------------------------------
