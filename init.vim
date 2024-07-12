@@ -33,6 +33,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mxw/vim-jsx'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+Plug 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'javascript.jsx', 'typescript'], 'do': 'make install' }
 Plug 'pangloss/vim-javascript'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'andythigpen/nvim-coverage'
@@ -43,11 +45,13 @@ Plug 'cocopon/inspecthi.vim'
 call plug#end()
 
 
+
 " --------------------------------------------
 " --- Tabs -----------------------------------
 " --------------------------------------------
 
 " set softtabstop=4
+
 
 
 " --------------------------------------------
@@ -148,11 +152,11 @@ let g:coc_global_extensions = [
 \ 'coc-highlight',
 \ 'coc-styled-components',
 \ 'coc-cfn-lint',
-\ 'coc-yaml',
-\ 'coc-java',
-\ '@yaegassy/coc-pug'
+\ 'coc-yaml'
 \ ]
-"  \ 'coc-prettier',
+" \ 'coc-prettier',
+" \ 'coc-java',
+" \ '@yaegassy/coc-pug',
 
 " --- FZF ------------------------------------
 nn <silent> <C-p> :Files<cr>
@@ -210,4 +214,3 @@ require('coverage').setup({
   }
 })
 EOF
-
